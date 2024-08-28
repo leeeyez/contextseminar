@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const MovieItem = ({ title, comment, img }) => {
+const ReviewItem = ({ title, comment, img }) => {
   return (
     <ReviewDiv>
       <img src={img} alt="movieimg" />
@@ -17,7 +17,7 @@ const MovieItem = ({ title, comment, img }) => {
   );
 };
 
-export default MovieItem;
+export default ReviewItem;
 
 const ReviewDiv = styled.div`
   display: flex;
