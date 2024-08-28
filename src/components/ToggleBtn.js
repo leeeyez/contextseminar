@@ -4,7 +4,11 @@ import { useTheme } from "../contexts/ThemeContext";
 
 const ToggleBtn = () => {
   const { theme, toggleTheme } = useTheme();
-  return <ToggleButton onClick={toggleTheme}>{theme}</ToggleButton>;
+  return (
+    <ToggleButton onClick={toggleTheme}>
+      {theme === "light" ? "light 🌝" : "dark 🌚"}
+    </ToggleButton>
+  );
 };
 
 export default ToggleBtn;
