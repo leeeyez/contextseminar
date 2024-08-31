@@ -16,7 +16,7 @@ const ReviewPage = () => {
         textColor={themeStyle[theme]["textColor"]}
       >
         <h1>테마 : {theme}</h1>
-
+        <h1>과제</h1>
         <button onClick={() => navigate("/create")}>작성하기</button>
         <ReviewList />
       </Wrapper>
